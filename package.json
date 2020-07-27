@@ -1,0 +1,15 @@
+{
+  "name": "nova-pasta",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "package": "asar pack Teste/"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron-packager": "^15.0.0"
+  }
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+            integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+            crossorigin="anonymous"></script>
+<title>Launcher</title>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+     <meta name="description" content="">
+     <meta name="keywords" content="">
+     <meta name="team" content="">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+           
+
+	 <link rel="icone" href="icone.ico">
+     <link rel="stylesheet" href="css/estilo.css">
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+     <link rel="stylesheet" href="css/owl.carousel.css">
+     <link rel="stylesheet" href="css/owl.theme.default.min.css">
+     <link rel="stylesheet" href="css/font-awesome.min.css">
+	 
+
+     <link rel="stylesheet" href="css/tooplate-style.css">
+
+</head>
+<body>
+     <!-- MENU -->
+     <section class="navbar custom-navbar navbar-fixed-top" role="navigation">
+          <div class="container">
+
+               <div class="navbar-header">
+                    <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                         <span class="icon icon-bar"></span>
+                         <span class="icon icon-bar"></span>
+                         <span class="icon icon-bar"></span>
+                    </button>
+
+                    <!-- lOGO TEXT HERE -->
+                    <a href="index.html" class="navbar-brand">Launcher ASnipin</a>
+               </div>
+
+               <!-- MENU LINKS -->
+               <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                         <li><a href="HTML/discord.html" class="smoothScroll">Servidor do Discord</a></li>
+                         <li><a href="HTML/sobre.html" class="smoothScroll">Sobre nós</a></li>
+                         <li><a href="HTML/contato.html" class="smoothScroll">Contato</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                         <li><a href="#">Dev - <span>ASnipin</span></a></li>
+                         <li> <figure class="foto-desligar"> <img src="images/desligar.png" onclick="quitApplication()"> </figure> </li>
+                    </ul>
+               </div>
+
+          </div>
+     </section>
+     <section id="home" data-stellar-background-ratio="0.5">
+          <div class="overlay"></div>
+          <div class="container">
+               <div class="row">
+                    <div class="col-md-offset-3 col-md-6 col-sm-12">
+                         <div class="home-info">
+                              <h1 class="SejaBemVindo">Seja bem vindo ao meu launcher</h1>
+                              <form action="" method="get" class="online-form">
+                         </div> 
+                         <a href="iniciar.html" class="section-btn">Iniciar</a>
+                    </div>
+
+               </div>
+          </div>
+     </section>
+
+     <script>
+          function typeWriter(elemento) {
+            const textoArray = elemento.innerHTML.split('');
+            elemento.innerHTML = '';
+            textoArray.forEach((letra, i) => {
+              setTimeout(() => elemento.innerHTML += letra, 75 * i);
+            });
+          }
+        
+          // Se estiver tendo problemas com performance, utilize o FOR loop como abaixo no local do forEach
+          // function typeWriter(elemento) {
+          //   const textoArray = elemento.innerHTML.split('');
+          //   elemento.innerHTML = '';
+          //   for(let i = 0; i < textoArray.length; i++) {
+          //     setTimeout(() => elemento.innerHTML += textoArray[i], 75 * i);
+          //   }
+          // }
+        
+          const titulo = document.querySelector('h1');
+          typeWriter(titulo);
+        </script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
